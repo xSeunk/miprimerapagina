@@ -220,3 +220,7 @@ footer a i{
             height: 100%;
       }
       }
+
+      .greeting{
+         background-color: aqua;
+      }
