@@ -1,0 +1,222 @@
+body{
+   margin: 0;
+   padding: 0;
+}
+#presentacion{
+   
+   margin: 10px 10px 10px 40px; 
+   border: 1px  solid gray;
+   background-color: #4b6584;
+   text-align: center;
+   color: white;
+}
+
+.seccion2 img{
+   width: 100%;
+   height: 950px;
+   background-color: white;
+}
+.seccion2{
+   background-color: black;
+
+}
+header{
+   display: flex;
+   background-color: black;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 40px;
+}
+footer{
+   display: flex;
+   background-color: black;
+   flex-wrap: wrap;
+   
+}
+footer h2{
+   color: #a0522d;
+   margin: 10px 10px 10px 30px; 
+   font-family: "Madimi One", sans-serif;
+}
+header nav ul{
+   display: flex;
+   gap: 2em;
+}
+footer nav ul{
+   display: flex;
+   gap: 0.4em;
+   font-family: "Madimi One", sans-serif; 
+   flex-direction: column;
+}
+ol, ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+header nav ul li a{
+   color: white;
+} 
+footer nav ul li a{
+   color: white;
+   
+}  
+#check{
+   display: none;
+}
+.checkbtn{
+   font-size: 25px;
+   color: white;
+   float: right;
+   line-height: 80px;
+   margin-right: 10px;
+   cursor: pointer;
+   display: none;
+} 
+header a i{
+   color: white;
+   font-size: 40px;
+   padding: 1em;
+}
+
+section div h2{
+   font-family: "Madimi One", sans-serif;
+}
+section div p{
+   font-family: "Roboto Mono", monospace;
+}
+
+footer a i{
+   color:  white;
+   font-size: 40px;
+   padding: 1em;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+}
+
+.imagen5 {
+   border-radius: 40px;
+   width: 10%;
+   height: 50%;
+   
+}
+.imagen6 {
+   border-radius: 40px;
+   width: 10%;
+   height: 50%;
+   
+}
+.seccion-3{
+   padding-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+.seccion-3 h2{
+   padding-bottom: 30px;
+}
+.servicios-row{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+.servicios-box{
+   width: 20%;
+}
+.servicios-box img{
+   width: 100%;
+}
+.servicios-box h3{
+   font-family: "Poppins", sans-serif;
+}
+.contenedor h2{
+   color: #a0522d;
+   margin: -20px 0px 10px 30px; 
+   font-family: "Madimi One", sans-serif;
+}
+.servicios-box p{
+   font-family: "Barlow Condensed", sans-serif;
+   font-size: 23px;
+}
+
+.acerda-de{
+   width: 25%;
+   height: 45%;
+   text-align: end;
+
+}
+.acerca-imagen{
+   width: 25%;
+   height: 30%;
+   text-align: center;
+   margin-top: 30px;
+}
+.seccion-1{
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+   background-color: #d3d3d3;
+
+}
+@media (max-width: 767px){
+   .servicios-row{
+      width: 80%;
+      gap: 1em;
+      
+   }
+   .servicios-box{
+      width: 100%;
+      }
+      .contenedor{
+        padding-left: 14%;
+        padding-bottom: 1%;
+      }
+      .checkbtn{
+         display: block;
+      }
+      .acerca-imagen{
+         margin-bottom: 40px;
+      }
+      #encabezado ul{
+         position: fixed;
+         width: 100%;
+         height: 100%;
+         background: #4b6584;
+         top: 60px;
+         left: 100%;
+         text-align: center;
+         transition: all 0.5s;
+      }
+      #check:checked ~ ul{
+         left: -5%;
+         display: block;
+      }
+      #encabezado nav ul li{
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+      }
+      #encabezado nav ul li a{
+         font-size: 20px;
+      }
+      
+      .seccion-1{
+         display: flex;
+         flex-direction: column;
+         background-color: #d3d3d3;
+      
+      }
+      .acerda-de{
+         width: 100%;
+         height: 100%;
+            text-align: center;
+         
+         }
+      .acerca-imagen{
+         text-align: center;
+         width: 100%;
+            height: 100%;
+      }
+      }
