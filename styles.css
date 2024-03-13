@@ -35,7 +35,7 @@ footer{
 }
 footer h2{
    color: #a0522d;
-   margin: 10px 10px 10px 30px; 
+   margin: 10px 10px 10px 50px; 
    font-family: "Madimi One", sans-serif;
 }
 header nav ul{
@@ -44,9 +44,10 @@ header nav ul{
 }
 footer nav ul{
    display: flex;
-   gap: 0.4em;
+   gap: 0.5em;
    font-family: "Madimi One", sans-serif; 
    flex-direction: column;
+   text-align: center;
 }
 ol, ul{
    list-style: none;
@@ -134,6 +135,7 @@ footer a i{
    color: #a0522d;
    margin: -20px 0px 10px 30px; 
    font-family: "Madimi One", sans-serif;
+
 }
 .servicios-box p{
    font-family: "Barlow Condensed", sans-serif;
@@ -224,3 +226,126 @@ footer a i{
       .greeting{
          background-color: aqua;
       }
+        
+  footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: black;
+ }
+ .form-header {
+   text-align: center;
+   background-color: #f6f7f8;
+   border: 1px solid #d6d9dc;
+   border-radius: 3px;
+   width: 80%;
+   margin-left: 10%;
+  
+ }
+ 
+ .form-header h1 {
+   font-size: 30px;
+   margin-bottom: 20px;
+   color: #a0522d;
+ }
+.piso{
+   background-color: #4b6584;
+   padding: 5%;
+}
+ 
+.form-row {
+   margin-bottom: 0px;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   flex-wrap: wrap;
+
+ }
+ 
+ .form-row input[type="text"],.form-row input[type="email"] {
+   background-color: #bdbdbd;
+   border: 0;
+   border-radius: 6px;
+   width: 90%;
+   padding: 10px;
+   font-size: 14px;
+   margin-bottom: 30px;
+ }
+ 
+ .form-row label {
+   margin-bottom: 4px;
+   text-align: initial;
+ }
+ @media only screen and (min-width: 700px) {
+   .form-header {
+     padding: 50px;
+   }
+ 
+   .form-row {
+     flex-direction: row;
+     align-items: flex-start;
+     margin-bottom: 30px;
+   }
+   .form-row input[type="text"], .form-row input[type="email"] {
+     width: 100%;
+     height: initial;
+   }
+   .form-row label {
+     text-align: right;
+     width: 100%;
+     margin-top: 7px;
+     padding-right: 20px;
+   }
+ }
+ .form-row textarea {
+   font-family: "Helvetica", "Arial", sans-serif;
+   font-size: 14px;
+   background-color: #bdbdbd;
+   border: 0;
+   border-radius: 6px;
+   min-height: 200px;
+   margin-bottom: 40px;
+   padding: 1px;
+   width: 100%;
+ }
+ .alertas{
+   font-size: 10px;
+   width: 100%;
+   font-family: "Helvetica", "Arial", sans-serif;
+   text-align: center;
+ }
+ /* ------------- Para Pantallas de más de 700px ------------- */
+ 
+ 
+ .form-row textarea {
+     width: 100%;
+   }
+
+   .form-row button {
+       font-size: 16px;
+       font-weight: bold;
+       color: #ffffff;
+       background-color: #5995da;
+       border: none;
+       border-radius: 3px;
+       padding: 10px 50px;
+       cursor: pointer;
+     }
+     
+     
+     .form-row button:hover {
+       background-color: #76aeed;
+     }
+     
+     
+     .form-row button:active {
+       background-color: #407fc7;
+     }
+     
+     
+     /* ------------- Para Pantallas de más de 700px ------------- */
+     
+     
+     .form-row button {
+         margin-left: 0px;
+     }

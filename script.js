@@ -1,40 +1,33 @@
-//alert("Hola este es mi Javascript");
-//let nombre = "Carlos";
-//nombre="Jesús";
+const form = document.getElementById("form");
+const nombre = document.getElementById("nombre");
+const parrafo = document.getElementById("alertas");
 
-//var nombre1='Carlos';
+function validarFormulario() {
+  let warnings = "";
+  let valido = true;
+  parrafo.innerHTML = "";
 
-//const nombre2='Carlos';
+  if (nombre.value.length < 4) {
+    warnings += `El nombre debe contener más de 4 caracteres`;
+    valido = false;
+  }
 
-//console.log(nombre);
-//console.log(nombre1);
-//console.log(nombre2);
-
-//SELECCIONAR ELEMENTOS
-let contenidoTitulo= 'Carlos';
-
-let titulo = document.querySelector(".logo .fuente-acento");
-titulo.innerHTML=contenidoTitulo;
-
-//condicionales
-let textotitulo = titulo.innerText;
-console.log(textotitulo);
-
-if(textotitulo == "Nombre"){
-    titulo.innerHTML = "Otro";
-}else{
-    console.log("No se cumple");
+  if (!valido) {
+    parrafo.innerHTML = warnings;
+  } else {
+    parrafo.innerHTML = "Enviado";
+  
+  }
+  return valido;
 }
 
-let nombre="Ani";
-let ciudad="Bs As";
-let gusto="Chocolate";
-
-let parrafo= document.querySelector(".parrafo2");
-
-function cambiarTexto(nombre,ciudad, gusto){
-    let contenido = `Me llamo ${nombre}, naci en ${ciudad} y vivo en caballito. Me encantaria aprender a programar`;   
-     return contenido;
-}
-
-parrafo.innerText = cambiarTexto(nombre,ciudad,gusto);
+form.addEventListener("submit", (e) => {
+  if (validarFormulario()) {
+    // Si la validación es exitosa, puedes enviar el formulario
+   
+   formulario.submit()
+ 
+  } else {
+    e.preventDefault(); // Evita que el formulario se envíe automáticamente
+  }
+});

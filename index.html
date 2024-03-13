@@ -79,23 +79,53 @@
                 </section>
                 <section>
                     <div class="piso">
-                        <footer>
-                            <div id="footer">
-                                <a href="https://egg.live/"><i class="fa-solid fa-gamepad fa-2xl"></i></a>
-                            </div>
-                                <nav>
-                                <h2>CONTACTO</h2>
-                                <ul>
-                                    <li><a href="index.html">Facebook</a></li>
-                                    <li><a href="#acerca">Instagram</a></li>
-                                    <li><a href="#trabajos">TikTok</a></li>
-                                </ul>
-                            </nav>
-                        </footer>
+                        <footer class="form-header">
+                            <h1>Contacto</h1>
+                            <p><em>¡Esperamos tu consulta!</em></p>
+                      
+                            <form action="" method="get" class="formulario" id="form">
+                                <div class="form-row">
+                                    <label for="nombre">Nombre</label>
+                                    <input id="nombre" name="nombre" type="text" />
+                                <div class="form-row">
+                                    <label for="email">Email</label>
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        placeholder="pepe@gmail.com"
+                                        />
+                                <div class="form-row">
+                                        <label for="mensaje">Mensaje</label>
+                                        <textarea id="mensaje" name="mensaje"></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <button>Enviar</button>
+                                  </div>
+                                </div>    
+                                </div>
+                                <p class="alertas" id="alertas"></p>
+                            </form>
+                          </footer>
+                          
                     </div>
                 </section>
+                <footer>
+                    <div id="footer">
+                        <a href="https://egg.live/"><i class="fa-solid fa-gamepad fa-2xl"></i></a>
+                    </div>
+                        <nav>
+                        <h2>REDES SOCIALES</h2>
+                        <ul>
+                            <li><a href="index.html">Facebook</a></li>
+                            <li><a href="#acerca">Instagram</a></li>
+                            <li><a href="#trabajos">TikTok</a></li>
+                        </ul>
+                    </nav>
+                </footer>
     </div>
-    <div class="greeting">BUENAS NOCHES</div>
+    
         </main>
+        <script src="script.js"></script>
 </body>
 </html>
